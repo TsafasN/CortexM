@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:XC6206PxxxMR U?
+U 1 1 5FBB9CD7
+P 2050 1000
+F 0 "U?" H 2050 1242 50  0000 C CNN
+F 1 "XC6206PxxxMR" H 2050 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2050 1225 50  0001 C CIN
+F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 2050 1000 50  0001 C CNN
+	1    2050 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F1:STM32F103C8Tx U?
+U 1 1 5FBBB5AC
+P 8550 3800
+F 0 "U?" H 8500 2211 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 8500 2120 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 7950 2400 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 8550 3800 50  0001 C CNN
+	1    8550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBC2FB0
+P 2050 1850
+F 0 "#PWR?" H 2050 1600 50  0001 C CNN
+F 1 "GND" H 2055 1677 50  0000 C CNN
+F 2 "" H 2050 1850 50  0001 C CNN
+F 3 "" H 2050 1850 50  0001 C CNN
+	1    2050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5FBBE853
+P 800 1200
+F 0 "J?" H 857 1667 50  0000 C CNN
+F 1 "USB_B_Micro" H 857 1576 50  0000 C CNN
+F 2 "" H 950 1150 50  0001 C CNN
+F 3 "~" H 950 1150 50  0001 C CNN
+	1    800  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBC4EF4
+P 800 1850
+F 0 "#PWR?" H 800 1600 50  0001 C CNN
+F 1 "GND" H 805 1677 50  0000 C CNN
+F 2 "" H 800 1850 50  0001 C CNN
+F 3 "" H 800 1850 50  0001 C CNN
+	1    800  1850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 700  1600
+Text GLabel 1100 1200 2    50   Input ~ 0
+USB_D+
+Text GLabel 1100 1300 2    50   Input ~ 0
+USB_D-
+NoConn ~ 1100 1400
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5FBCDDBD
+P 1550 1000
+F 0 "FB?" V 1400 1000 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 1650 850 50  0000 C CNN
+F 2 "" V 1480 1000 50  0001 C CNN
+F 3 "~" H 1550 1000 50  0001 C CNN
+	1    1550 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FBCF834
+P 1700 1650
+F 0 "C?" H 1400 1700 50  0000 L CNN
+F 1 "C_Small" H 1300 1600 50  0000 L CNN
+F 2 "" H 1700 1650 50  0001 C CNN
+F 3 "~" H 1700 1650 50  0001 C CNN
+	1    1700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FBD0309
+P 2400 1650
+F 0 "C?" H 2492 1696 50  0000 L CNN
+F 1 "C_Small" H 2492 1605 50  0000 L CNN
+F 2 "" H 2400 1650 50  0001 C CNN
+F 3 "~" H 2400 1650 50  0001 C CNN
+	1    2400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBD15E7
+P 1700 1850
+F 0 "#PWR?" H 1700 1600 50  0001 C CNN
+F 1 "GND" H 1705 1677 50  0000 C CNN
+F 2 "" H 1700 1850 50  0001 C CNN
+F 3 "" H 1700 1850 50  0001 C CNN
+	1    1700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBD19B4
+P 2400 1850
+F 0 "#PWR?" H 2400 1600 50  0001 C CNN
+F 1 "GND" H 2405 1677 50  0000 C CNN
+F 2 "" H 2400 1850 50  0001 C CNN
+F 3 "" H 2400 1850 50  0001 C CNN
+	1    2400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FBD239B
+P 3050 1300
+F 0 "R?" H 2850 1350 50  0000 L CNN
+F 1 "R_Small" H 2700 1250 50  0000 L CNN
+F 2 "" H 3050 1300 50  0001 C CNN
+F 3 "~" H 3050 1300 50  0001 C CNN
+	1    3050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBD2CAC
+P 3050 1850
+F 0 "#PWR?" H 3050 1600 50  0001 C CNN
+F 1 "GND" H 3055 1677 50  0000 C CNN
+F 2 "" H 3050 1850 50  0001 C CNN
+F 3 "" H 3050 1850 50  0001 C CNN
+	1    3050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FBD31EF
+P 2850 1000
+F 0 "D?" H 2843 745 50  0000 C CNN
+F 1 "LED" H 2843 836 50  0000 C CNN
+F 2 "" H 2850 1000 50  0001 C CNN
+F 3 "~" H 2850 1000 50  0001 C CNN
+	1    2850 1000
+	-1   0    0    1   
+$EndComp
+Text Notes 1300 2200 2    50   ~ 0
+USB and Regulator
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FBCADA0
+P 2550 800
+F 0 "#PWR?" H 2550 650 50  0001 C CNN
+F 1 "+3.3V" H 2565 973 50  0000 C CNN
+F 2 "" H 2550 800 50  0001 C CNN
+F 3 "" H 2550 800 50  0001 C CNN
+	1    2550 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FBCCFAD
+P 1350 800
+F 0 "#PWR?" H 1350 650 50  0001 C CNN
+F 1 "+5V" H 1365 973 50  0000 C CNN
+F 2 "" H 1350 800 50  0001 C CNN
+F 3 "" H 1350 800 50  0001 C CNN
+	1    1350 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1000 1350 1000
+Wire Wire Line
+	1350 800  1350 1000
+Wire Wire Line
+	800  1600 800  1850
+Wire Wire Line
+	1350 1000 1450 1000
+Connection ~ 1350 1000
+Wire Wire Line
+	2350 1000 2400 1000
+Wire Wire Line
+	2550 800  2550 1000
+Connection ~ 2550 1000
+Wire Wire Line
+	2550 1000 2700 1000
+Wire Wire Line
+	3000 1000 3050 1000
+Wire Wire Line
+	3050 1000 3050 1200
+Wire Wire Line
+	3050 1400 3050 1850
+Wire Wire Line
+	1650 1000 1700 1000
+Wire Wire Line
+	1700 1850 1700 1750
+Wire Wire Line
+	2400 1850 2400 1750
+Wire Wire Line
+	2400 1550 2400 1000
+Connection ~ 2400 1000
+Wire Wire Line
+	2400 1000 2550 1000
+Wire Wire Line
+	1700 1000 1700 1550
+Connection ~ 1700 1000
+Wire Wire Line
+	1700 1000 1750 1000
+Wire Wire Line
+	2050 1300 2050 1850
+Wire Notes Line
+	550  2100 550  550 
+Wire Notes Line
+	550  550  3200 550 
+Wire Notes Line
+	3200 550  3200 2100
+Wire Notes Line
+	3200 2100 550  2100
+$EndSCHEMATC
