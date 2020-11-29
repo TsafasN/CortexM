@@ -219,9 +219,6 @@ Wire Wire Line
 	2450 1150 2600 1150
 Wire Wire Line
 	1750 1150 1750 1700
-Connection ~ 1750 1150
-Wire Wire Line
-	1750 1150 1800 1150
 Wire Wire Line
 	2100 1450 2100 2000
 Wire Notes Line
@@ -260,8 +257,6 @@ F 3 "" H 9650 2700 50  0001 C CNN
 	1    9650 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9650 2700 9650 2900
 Wire Wire Line
 	9250 2900 9250 2800
 Wire Wire Line
@@ -760,7 +755,6 @@ Wire Wire Line
 	9900 1150 9900 1100
 Wire Wire Line
 	9900 1100 10400 1100
-Connection ~ 10400 1100
 $Comp
 L Device:L_Small L1
 U 1 1 5FC6918F
@@ -779,8 +773,6 @@ Wire Wire Line
 Connection ~ 9900 1100
 Wire Wire Line
 	9500 950  9500 1100
-Wire Wire Line
-	10400 950  10400 1100
 Wire Wire Line
 	9900 1400 9900 1550
 Wire Notes Line
@@ -954,4 +946,12 @@ Wire Wire Line
 	10750 4450 10750 4300
 Wire Wire Line
 	10750 4800 10750 4650
+Wire Wire Line
+	9650 2700 9650 2900
+Wire Wire Line
+	10400 1100 10400 950 
+Connection ~ 10400 1100
+Wire Wire Line
+	1750 1150 1800 1150
+Connection ~ 1750 1150
 $EndSCHEMATC
